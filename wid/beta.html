@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Beta Tester Notes – WID – When I Die</title>
+  <meta name="description" content="Beta testing guide for WID – When I Die." />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <header class="site">
+    <div class="wrap">
+      <a class="brand" href="../">The Rabbit's Burrow</a>
+      <nav>
+        <a href="../">Home</a>
+        <a href="./">WID</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="beta.html">Beta</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <p class="breadcrumb"><a href="../">Home</a> · <a href="./">WID</a> · Beta Tester Notes</p>
+
+    <h1>WID – Beta Tester Notes</h1>
+    <p class="lead">
+      Thank you for helping test WID (When I Die).
+      Your feedback catches problems before a wider release.
+    </p>
+
+    <h2>What WID is</h2>
+    <p>
+      WID is an <strong>offline encrypted vault</strong> for information your loved ones might need later
+      (accounts, passwords, notes, documents). Data stays on your device.
+      There is no WID cloud account in this beta.
+    </p>
+    <p>
+      <strong>Positioning:</strong> the offline vault that holds what matters when you can’t explain it yourself.
+    </p>
+
+    <h2>Before you start</h2>
+    <ol>
+      <li>
+        <strong>Use a test passphrase you will not forget</strong> — or write it down offline.<br />
+        <strong>If you lose the master passphrase, the vault cannot be recovered.</strong> We cannot reset it.
+      </li>
+      <li>Prefer a <strong>real phone</strong> (not only an emulator), especially for biometric unlock.</li>
+      <li>
+        This is beta software: expect rough edges.
+        <strong>Do not store your only copy of critical real-life secrets</strong>
+        until you are comfortable with backup/export behaviour.
+      </li>
+      <li>
+        <strong>Uninstalling or clearing app data deletes the local vault.</strong>
+        Export a backup first if you care about the data
+        (full version / premium flag required for backup in the current build).
+      </li>
+    </ol>
+
+    <h2>How to install</h2>
+    <ul>
+      <li>You will receive a link from <strong>Google Play Internal testing</strong> (or an APK from the developer).</li>
+      <li>Join the test with the Google account the developer invited.</li>
+      <li>Install <strong>WID</strong>, open it, complete onboarding, and create your vault.</li>
+    </ul>
+    <p>If the store page is not visible, ensure you accepted the internal testing invitation email/link.</p>
+
+    <h2>Please exercise these flows</h2>
+
+    <h3>Must test</h3>
+    <table>
+      <thead>
+        <tr><th>Flow</th><th>What to do</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>First run</td>
+          <td>Onboarding → create master passphrase → land in empty vault</td>
+        </tr>
+        <tr>
+          <td>Entries</td>
+          <td>Create at least one of each type: Note, Password, Account, Contact, Document</td>
+        </tr>
+        <tr>
+          <td>Categories / search</td>
+          <td>Assign categories, search by title</td>
+        </tr>
+        <tr>
+          <td>Lock / unlock</td>
+          <td>Lock from the toolbar; unlock with passphrase</td>
+        </tr>
+        <tr>
+          <td>Biometric</td>
+          <td>Unlock once with passphrase, then try biometric (if device supports it)</td>
+        </tr>
+        <tr>
+          <td>Auto-lock</td>
+          <td>Switch away from the app; confirm it locks when you return (per your timeout setting)</td>
+        </tr>
+        <tr>
+          <td>Trusted contact</td>
+          <td>Add a contact; note free-tier limits if you hit them</td>
+        </tr>
+        <tr>
+          <td>Emergency code</td>
+          <td>Generate a recovery code; copy/share kit if available</td>
+        </tr>
+        <tr>
+          <td>Emergency unlock</td>
+          <td>
+            On unlock screen use “I have an Emergency Access code”; confirm waiting period behaviour
+            (use <strong>0 hours</strong> on a test contact if you need a quick check)
+          </td>
+        </tr>
+        <tr>
+          <td>Theme</td>
+          <td>Settings → Light / Dark / System; confirm nav buttons stay visible</td>
+        </tr>
+        <tr>
+          <td>Attachments</td>
+          <td>Add a small photo/file to an entry; open it; confirm size limit messaging if you try a large file</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>Please test if enabled on your build</h3>
+    <table>
+      <thead>
+        <tr><th>Flow</th><th>What to do</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Premium / upgrade</td>
+          <td>Open upgrade screen; if a test unlock is enabled, try backup export + import</td>
+        </tr>
+        <tr>
+          <td>Backup</td>
+          <td>Export <code>.wid</code> file → change or clear data only if acceptable → import and confirm <strong>replace</strong> behaviour</td>
+        </tr>
+        <tr>
+          <td>Security log</td>
+          <td>Unlock, lock, change a setting; open Settings → Security Log</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Free tier limits (expected)</h2>
+    <ul>
+      <li>Limited trusted contacts</li>
+      <li>Limited active emergency codes</li>
+      <li>Backup may require full version</li>
+      <li>Attachment max size smaller on free (e.g. 5 MB vs 15 MB)</li>
+    </ul>
+    <p>Hitting a limit should show an upgrade prompt, not a crash.</p>
+
+    <h2>How to report a bug</h2>
+    <p>Send a short report to: <strong>[INSERT CONTACT EMAIL]</strong></p>
+    <p>Include:</p>
+    <ol>
+      <li><strong>Device</strong> – model + Android version</li>
+      <li><strong>App version</strong> – from Settings → About (or Play listing)</li>
+      <li><strong>Steps</strong> – what you did, in order</li>
+      <li><strong>Expected vs actual</strong> – what should have happened vs what did</li>
+      <li><strong>Screenshots</strong> or screen recording if useful</li>
+      <li><strong>Can you reproduce it?</strong> Always / sometimes / once</li>
+    </ol>
+    <p>
+      <strong>Subject line example:</strong>
+      <code>[WID Beta] Crash on emergency unlock – Pixel 8 / Android 15</code>
+    </p>
+    <div class="note">
+      Please <strong>do not</strong> send your real master passphrase or real recovery codes in email.
+    </div>
+
+    <h2>Known product truths (not bugs)</h2>
+    <ul>
+      <li>Lost passphrase ⇒ no recovery</li>
+      <li>Emergency access needs the code <strong>and</strong> the app/data on a device</li>
+      <li>Import backup <strong>replaces</strong> vault entries (does not merge)</li>
+      <li>New entry attachments: app may save the entry first, then attach</li>
+      <li>Not a legal will or professional advice tool</li>
+    </ul>
+
+    <h2>Feedback we especially want</h2>
+    <ul>
+      <li>Confusing copy or onboarding steps</li>
+      <li>Anything that felt unsafe or unclear about emergency access</li>
+      <li>Crashes, freezes, or “file is not a database” / unlock failures</li>
+      <li>Whether you would trust this for family use — and what would increase that trust</li>
+    </ul>
+
+    <h2>Thank you</h2>
+    <p>You are helping make a sensitive tool safer and clearer.<br />— WID team</p>
+  </main>
+
+  <footer class="site">
+    <div class="wrap">
+      <p>
+        <a href="./">WID</a> ·
+        <a href="privacy.html">Privacy Policy</a> ·
+        <a href="../">The Rabbit's Burrow</a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
