@@ -10,6 +10,7 @@ Site URL (after publish): **https://therabbitsburrow.github.io/**
 | Home | `https://therabbitsburrow.github.io/` |
 | WID project | `https://therabbitsburrow.github.io/wid/` |
 | WID Privacy Policy | `https://therabbitsburrow.github.io/wid/privacy.html` |
+| WID Beta Tester Notes | `https://therabbitsburrow.github.io/wid/beta.html` |
 
 Use the privacy URL in Google Play Console → App content → Privacy policy.
 
