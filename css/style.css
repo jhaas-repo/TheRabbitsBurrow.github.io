@@ -235,3 +235,58 @@ footer.site a {
 .breadcrumb a {
   color: var(--text-muted);
 }
+
+
+/* Screenshot grid on beta notes */
+.shot-grid {
+  display: grid;
+  gap: 1.25rem;
+  margin: 1.25rem 0 2rem;
+}
+
+@media (min-width: 560px) {
+  .shot-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.shot {
+  margin: 0;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.shot img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 420px;
+  object-fit: contain;
+  background: #0a090c;
+}
+
+.shot figcaption {
+  padding: 0.75rem 1rem 1rem;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.shot figcaption strong {
+  color: var(--text);
+}
+
+.shot.missing img {
+  display: none;
+}
+
+.shot.missing::before {
+  content: "Screenshot pending — add file under wid/screenshots/";
+  display: block;
+  padding: 2.5rem 1rem;
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  background: #0a090c;
+}
