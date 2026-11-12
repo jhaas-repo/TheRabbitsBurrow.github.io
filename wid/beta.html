@@ -15,14 +15,14 @@
         <a href="../">Home</a>
         <a href="./">WID</a>
         <a href="privacy.html">Privacy</a>
+        <a href="beta.html">Beta</a>
       </nav>
     </div>
   </header>
 
   <main class="wrap">
     <p class="breadcrumb"><a href="../">Home</a> · <a href="./">WID</a> · Beta Tester Notes</p>
-    <img class="hero-logo" src="logo.png" alt="WID logo" width="96" height="96" />
-    
+
     <h1>WID – Beta Tester Notes</h1>
     <p class="lead">
       Thank you for helping test WID (When I Die).
@@ -65,6 +65,46 @@
       <li>Install <strong>WID</strong>, open it, complete onboarding, and create your vault.</li>
     </ul>
     <p>If the store page is not visible, ensure you accepted the internal testing invitation email/link.</p>
+
+
+    <h2>Screenshots</h2>
+    <p>
+      Visual guide to the main screens. Use <strong>dummy data only</strong> — never real passwords or recovery codes.
+      If an image is missing, the checklist below still applies.
+    </p>
+
+    <div class="shot-grid">
+      <figure class="shot">
+        <img src="screenshots/01-unlock.png" alt="Unlock screen" loading="lazy"
+             onerror="this.parentElement.classList.add('missing')" />
+        <figcaption><strong>1. Unlock</strong> — passphrase, biometric, emergency access link</figcaption>
+      </figure>
+      <figure class="shot">
+        <img src="screenshots/02-vault.png" alt="Vault home" loading="lazy"
+             onerror="this.parentElement.classList.add('missing')" />
+        <figcaption><strong>2. Vault</strong> — entries, search, categories</figcaption>
+      </figure>
+      <figure class="shot">
+        <img src="screenshots/03-entry.png" alt="Add or edit entry" loading="lazy"
+             onerror="this.parentElement.classList.add('missing')" />
+        <figcaption><strong>3. Entry</strong> — types, fields, attachments</figcaption>
+      </figure>
+      <figure class="shot">
+        <img src="screenshots/04-contact.png" alt="Trusted contact" loading="lazy"
+             onerror="this.parentElement.classList.add('missing')" />
+        <figcaption><strong>4. Trusted contact</strong> — generate emergency code / share kit</figcaption>
+      </figure>
+      <figure class="shot">
+        <img src="screenshots/05-settings.png" alt="Settings" loading="lazy"
+             onerror="this.parentElement.classList.add('missing')" />
+        <figcaption><strong>5. Settings</strong> — theme, auto-lock, backup, security log</figcaption>
+      </figure>
+      <figure class="shot">
+        <img src="screenshots/06-upgrade.png" alt="Upgrade prompt" loading="lazy"
+             onerror="this.parentElement.classList.add('missing')" />
+        <figcaption><strong>6. Upgrade</strong> — free-tier limit prompt (if you hit a cap)</figcaption>
+      </figure>
+    </div>
 
     <h2>Please exercise these flows</h2>
 
@@ -155,10 +195,11 @@
     <p>Hitting a limit should show an upgrade prompt, not a crash.</p>
 
     <h2>How to report a bug</h2>
-    <p>Send a short report to: <strong>therabbitsburrow7@gmail.com</strong></p>
+    <p>Send a short report to: <strong>[INSERT CONTACT EMAIL]</strong></p>
     <p>Include:</p>
     <ol>
-      <li><strong>Device</strong> – model</li>
+      <li><strong>Device</strong> – model + Android version</li>
+      <li><strong>App version</strong> – from Settings → About (or Play listing)</li>
       <li><strong>Steps</strong> – what you did, in order</li>
       <li><strong>Expected vs actual</strong> – what should have happened vs what did</li>
       <li><strong>Screenshots</strong> or screen recording if useful</li>
@@ -166,7 +207,7 @@
     </ol>
     <p>
       <strong>Subject line example:</strong>
-      <code>[WID Beta] Crash on emergency unlock – Pixel 8</code>
+      <code>[WID Beta] Crash on emergency unlock – Pixel 8 / Android 15</code>
     </p>
     <div class="note">
       Please <strong>do not</strong> send your real master passphrase or real recovery codes in email.
