@@ -18,7 +18,8 @@
         <a href="../">Home</a>
         <a href="./">WID</a>
         <a href="privacy.html">Privacy</a>
-        <a href="roadmap.html">Roadmap</a>
+        <a href="beta.html">Beta</a>
+        <a href="roadmap.html" aria-current="page">Roadmap</a>
       </nav>
     </div>
   </header>
@@ -39,135 +40,158 @@
       This page is a public summary, not a contract.
     </div>
 
-    <h2>Now → 1.0</h2>
-    <table>
-      <thead>
-        <tr><th>Item</th><th>What it means</th></tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><strong>Beta hardening</strong></td>
-          <td>
-            Unlock attempt protection, restore screen after lock (no lost drafts),
-            biometric opt-in, attachments only when you save, fuller security log,
-            type filters and attachment rules polish.
-          </td>
-        </tr>
-        <tr>
-          <td><strong>One-time Full unlock</strong></td>
-          <td>Google Play Billing for unlimited contacts &amp; codes, encrypted backup, higher attachment limits.</td>
-        </tr>
-        <tr>
-          <td><strong>Emergency Kit as PDF</strong></td>
-          <td>Printable / shareable PDF for trusted contacts (instructions, waiting period, optional code area).</td>
-        </tr>
-        <tr>
-          <td><strong>Share a single vault item as PDF</strong></td>
-          <td>Export one entry (e.g. insurance details) when you need to show something without opening the whole vault.</td>
-        </tr>
-        <tr>
-          <td><strong>Store &amp; About polish</strong></td>
-          <td>Clear Play listing, website linked from the app, solid privacy &amp; data-safety answers.</td>
-        </tr>
-        <tr>
-          <td><strong>Stable 1.0</strong></td>
-          <td>Feature freeze on the core vault; critical fixes only.</td>
-        </tr>
-      </tbody>
-    </table>
+    <nav class="roadmap-nav" aria-label="Roadmap sections">
+      <a href="#now">Now</a>
+      <a href="#next">Next</a>
+      <a href="#later">Later</a>
+      <a href="#version">Versions</a>
+      <a href="#not-planned">Not planned</a>
+    </nav>
 
-    <h2>Next (1.x)</h2>
-    <table>
-      <thead>
-        <tr><th>Item</th><th>What it means</th></tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><strong>Richer Emergency Kit</strong></td>
-          <td>PDF plus optional QR code, owner label, clearer “prepared for” branding.</td>
-        </tr>
-        <tr>
-          <td><strong>Biometric options</strong></td>
-          <td>Choose which device biometrics (fingerprint, face, etc.) are allowed for unlock.</td>
-        </tr>
-        <tr>
-          <td><strong>Stronger backups</strong></td>
-          <td>Format improvements, integrity checks, clearer version handling.</td>
-        </tr>
-        <tr>
-          <td><strong>Security log upgrades</strong></td>
-          <td>Richer history for the vault owner; optional export.</td>
-        </tr>
-        <tr>
-          <td><strong>Onboarding &amp; accessibility</strong></td>
-          <td>Clearer first-run guidance, larger text, contrast, and screen-reader pass.</td>
-        </tr>
-      </tbody>
-    </table>
+    <section class="roadmap-milestone" aria-label="Next milestone">
+      <div>
+        <strong>WID 1.0</strong>
+        <span>Stable core vault with one-time Full unlock</span>
+      </div>
+      <span class="status-label">Next milestone</span>
+    </section>
 
-    <h2>Later</h2>
-    <table>
-      <thead>
-        <tr><th>Item</th><th>What it means</th></tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><strong>Multi-device encrypted sync</strong></td>
-          <td>
-            Optional sync across your devices with end-to-end encryption (zero-knowledge):
-            the server would only ever see ciphertext. Unlock still needs your master passphrase
-            (or approved device keys). Likely a separate subscription, not part of the one-time Full unlock.
-            Offline-first behaviour remains when you’re offline.
-          </td>
-        </tr>
-        <tr>
-          <td><strong>Multiple vaults</strong></td>
-          <td>More than one vault on a device — e.g. personal and business — each with its own passphrase and data.</td>
-        </tr>
-        <tr>
-          <td><strong>Folder sharing with contacts</strong></td>
-          <td>Share different sets of information with different trusted contacts (larger access-control design).</td>
-        </tr>
-        <tr>
-          <td><strong>Import from password managers</strong></td>
-          <td>Optional import from the phone’s password manager or common managers where the platform allows it.</td>
-        </tr>
-        <tr>
-          <td><strong>iOS version</strong></td>
-          <td>Same privacy model on Apple devices — a large, separate effort.</td>
-        </tr>
-        <tr>
-          <td><strong>Estate checklist templates</strong></td>
-          <td>Optional non-legal prompts and categories to help organise what you store.</td>
-        </tr>
-        <tr>
-          <td><strong>Independent security review</strong></td>
-          <td>If the product grows, publish more detail on the threat model and any third-party review.</td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="roadmap-status">
+      <section class="roadmap-column" id="now">
+        <span class="status-label">In progress</span>
+        <h2>Now — toward 1.0</h2>
+        <p>Hardening the core before the stable release.</p>
 
-    <h2>Not on the roadmap</h2>
-    <ul>
-      <li>Replacing a will, lawyer, or professional advice</li>
-      <li>Recovering a forgotten master passphrase from our side</li>
-      <li>Guaranteed access if the device is gone and no backup exists</li>
-    </ul>
+        <div class="roadmap-item">
+          <strong>Beta hardening</strong>
+          <span>Unlock protection, restore without lost drafts, biometric opt-in, security log, and attachment polish.</span>
+        </div>
+        <div class="roadmap-item">
+          <strong>One-time Full unlock</strong>
+          <span>Unlimited contacts and codes, encrypted backup, and higher attachment limits.</span>
+        </div>
+        <div class="roadmap-item">
+          <strong>Emergency Kit PDF</strong>
+          <span>A printable kit with instructions, waiting-period guidance, and an optional code area.</span>
+        </div>
+        <div class="roadmap-item">
+          <strong>Single-item PDF</strong>
+          <span>Share one selected entry without exposing the whole vault.</span>
+        </div>
+        <div class="roadmap-item">
+          <strong>Store and About polish</strong>
+          <span>Clear Play listing, app website links, and complete privacy and data-safety answers.</span>
+        </div>
+        <div class="roadmap-item">
+          <strong>Stable 1.0</strong>
+          <span>Feature freeze on the core vault, followed by critical fixes only.</span>
+        </div>
+      </section>
 
-    <h2>Version sketch</h2>
-    <table>
-      <thead>
-        <tr><th>Version</th><th>Intent</th></tr>
-      </thead>
-      <tbody>
-        <tr><td><strong>0.9.x</strong></td><td>Internal / closed beta and hardening</td></tr>
-        <tr><td><strong>1.0</strong></td><td>Stable core + one-time Full unlock</td></tr>
-        <tr><td><strong>1.1</strong></td><td>PDF kit and single-item PDF share</td></tr>
-        <tr><td><strong>2.0</strong></td><td>Multi-device sync, multi-vault, and/or multi-platform — if we go there</td></tr>
-      </tbody>
-    </table>
+      <section class="roadmap-column" id="next">
+        <span class="status-label">Planned</span>
+        <h2>Next — 1.x</h2>
+        <p>Focused improvements after the core is stable.</p>
 
-    <p class="meta" style="margin-top: 2rem;">
+        <div class="roadmap-item">
+          <strong>Richer Emergency Kit</strong>
+          <span>QR code support, owner labels, and clearer prepared-for branding.</span>
+        </div>
+        <div class="roadmap-item">
+          <strong>Biometric choices</strong>
+          <span>Choose which supported device biometrics may unlock the vault.</span>
+        </div>
+        <div class="roadmap-item">
+          <strong>Stronger backups</strong>
+          <span>Improved formats, integrity checks, and clearer version handling.</span>
+        </div>
+        <div class="roadmap-item">
+          <strong>Security log upgrades</strong>
+          <span>Richer vault history and optional log export.</span>
+        </div>
+        <div class="roadmap-item">
+          <strong>Onboarding and accessibility</strong>
+          <span>Clearer first-run guidance, larger text, contrast, and screen-reader improvements.</span>
+        </div>
+      </section>
+
+      <section class="roadmap-column" id="later">
+        <span class="status-label">Exploring</span>
+        <h2>Later — 2.0 and beyond</h2>
+        <p>Potential features that require more design work.</p>
+
+        <details class="roadmap-item">
+          <summary><strong>Multi-device encrypted sync</strong></summary>
+          <span>Optional end-to-end encrypted sync, without changing the offline-first experience. May be subscription-based.</span>
+        </details>
+        <div class="roadmap-item">
+          <strong>Multiple vaults</strong>
+          <span>Separate personal and business vaults, each with its own passphrase and data.</span>
+        </div>
+        <details class="roadmap-item">
+          <summary><strong>Folder sharing with contacts</strong></summary>
+          <span>Share different sets of information with different trusted contacts using finer access controls.</span>
+        </details>
+        <div class="roadmap-item">
+          <strong>Password-manager import</strong>
+          <span>Optional import from supported password managers and Android providers.</span>
+        </div>
+        <div class="roadmap-item">
+          <strong>iOS version</strong>
+          <span>The same privacy model on Apple devices would be a separate, substantial project.</span>
+        </div>
+        <div class="roadmap-item">
+          <strong>Estate checklist templates</strong>
+          <span>Optional non-legal prompts to help organise stored information.</span>
+        </div>
+        <div class="roadmap-item">
+          <strong>Independent security review</strong>
+          <span>Publish more detail on the threat model and results of a qualified third-party review as the product grows.</span>
+        </div>
+      </section>
+
+      <section class="roadmap-column" id="version">
+        <span class="status-label">Version sketch</span>
+        <h2>Release intent</h2>
+        <p>A simplified view of the planned release stages.</p>
+
+        <div class="roadmap-item">
+          <strong>0.9.x — Beta</strong>
+          <span>Internal and closed-beta hardening.</span>
+        </div>
+        <div class="roadmap-item">
+          <strong>1.0 — Stable</strong>
+          <span>Core vault and one-time Full unlock.</span>
+        </div>
+        <div class="roadmap-item">
+          <strong>1.1 — Export</strong>
+          <span>PDF kit and single-item PDF sharing.</span>
+        </div>
+        <div class="roadmap-item">
+          <strong>2.0 — Expansion</strong>
+          <span>Sync, multiple vaults, or additional platforms if priorities support it.</span>
+        </div>
+      </section>
+    </div>
+
+    <section class="roadmap-column" id="not-planned">
+      <span class="status-label">Not planned</span>
+      <h2>Outside the product boundary</h2>
+      <div class="roadmap-item">
+        <strong>Legal or professional estate advice</strong>
+        <span>WID will not replace a will, lawyer, or professional adviser.</span>
+      </div>
+      <div class="roadmap-item">
+        <strong>Passphrase recovery</strong>
+        <span>A forgotten master passphrase cannot be recovered from our side.</span>
+      </div>
+      <div class="roadmap-item">
+        <strong>Guaranteed emergency access</strong>
+        <span>Access cannot be guaranteed if the device is gone and no usable backup exists.</span>
+      </div>
+    </section>
+
+    <p class="meta roadmap-footer">
       Questions or beta interest? See the <a href="beta.html">beta tester notes</a>
       or the <a href="privacy.html">privacy policy</a>.
       Development issues are tracked on
@@ -180,6 +204,7 @@
       <p>
         <a href="./">WID</a> ·
         <a href="privacy.html">Privacy Policy</a> ·
+        <a href="beta.html">Beta</a> ·
         <a href="roadmap.html">Roadmap</a>
       </p>
     </div>
