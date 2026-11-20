@@ -91,27 +91,7 @@ nav a:hover {
   color: var(--text);
 }
 
-.site-banner {
-  margin: 0.25rem 0 2rem;
-  overflow: hidden;
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  background: var(--surface);
-}
-
-.site-banner img {
-  display: block;
-  width: 100%;
-  height: 280px;
-  object-fit: cover;
-  object-position: center;
-}
-
 @media (max-width: 559px) {
-  .site-banner img {
-    height: 190px;
-  }
-
   .brand span {
     display: none;
   }
